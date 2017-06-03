@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p><%= visitante %></p>
-    <p><%= semestre %></p>
-  </body>
-</html>
+<center>
+  <h3>blabla <%= title %></h3>
+  blablablablabla
+  <table>
+    <tr>
+      <td>tipo de reclamo</td>
+      <td>observacion</td>
+      <td>fecha</td>
+    </tr>
+    <tr>
+      <td><%= reclamo.tipoReclamo %></td>
+      <td><%= reclamo.observacion %></td>
+      <td><%= reclamo.fecha %></td>
+    </tr>
+  </table>
+</center>

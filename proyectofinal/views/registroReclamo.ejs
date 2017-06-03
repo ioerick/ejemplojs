@@ -1,0 +1,19 @@
+<form method="post" action="guardarContacto">
+<div>
+<label for="tipoReclamo" class="rem">tipoReclamo:</label>
+<select name="reclamo[tipoReclamo]">
+<option value="<%= reclamo.tipoReclamo %>"><%= reclamo.tipoReclamo %></option>
+</select>
+</div>
+<div>
+<label for="observacion" class="rem">observacion:</label>
+<input type="text" id="observacion" name="reclamo[observacion]" value="<%= reclamo.observacion %>">
+</div>
+<div>
+<label for="fecha" class="rem">fecha:</label>
+<input type="text" id="fecha" name="reclamo[fecha]" value="<%= reclamo.fecha %>">
+</div>
+<div>
+<input type="submit" name="envio" value="Registrar Contacto">
+</div>
+</form>
